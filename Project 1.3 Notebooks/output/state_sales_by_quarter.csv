@@ -1,4 +1,5 @@
-Year,Month,State,Sales
+Year,Quarter,State,Sales
+2018,9,ACT,464
 2018,9,NSW,3499
 2018,9,QLD,1499
 2018,9,SA,1381
@@ -135,3 +136,4 @@ Year,Month,State,Sales
 2020,7,QLD,329
 2020,7,SA,387
 2020,7,VIC,1970
+2020,7,WA,627
