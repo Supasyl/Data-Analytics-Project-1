@@ -7,14 +7,14 @@
 - Sylvia Broadbent
 
 ## Table of Contents
-[Summery](#Summery)
-[Stock Market - Daniel Sobral](#Stock Market - Daniel Sobral)
-[Real estate - Warren Villarosa](#Real estate - Warren Villarosa)
-[Permits & construction value - Sylvia Broadbent](#Permits & construction value - Sylvia Broadbent)
-[First home owners grant - Lauren Prins](#First home owners grant - Lauren Prins)
-[Conclusion](#Conclusion)
-[Limitations of the study/ Difficulties experienced](#Limitations of the study/ Difficulties experienced)
-[If we had more time](#If we had more time)
+- [Summery](#Summery)
+- [Stock Market - Daniel Sobral](#Stock_Market)
+- [Real estate - Warren Villarosa](#Real_estate)
+- [Permits & construction value - Sylvia Broadbent](#Permits_construction)
+- [First home owners grant - Lauren Prins](#First_home)
+- [Conclusion](#Conclusion)
+- [Limitations of the study/ Difficulties experienced](#Limitations)
+- [If we had more time](#more_time)
 
 # Summary <a name = "Summery"></a>
 ## Hypothesis
@@ -30,7 +30,7 @@ We based our timeframe for the research on the dataset with the most limited dat
 ## Covid-19 period
 In WA the regional travel ban started on 31 March so we have used the second quarter of 2020 as the ‘COVID-19’ quarter to compare against. 
 
-# Stock Market - Daniel Sobral <a name = "Stock Market - Daniel Sobral"></a>
+# Stock Market - Daniel Sobral <a name = "Stock_Market"></a>
 
 ## Question: How was the Share Market impacted from Q4 2018 to Q2 2020?
 How does the behavior of the market relates to other macro economic factors in the Real Estate Sector?
@@ -114,7 +114,7 @@ Normal Distribution Hypothesis:
 Using - scipy.stats module 
 Both Variables exceeded the necessary p-value to be considered normal distribution so we cannot run a linear regression and evaluate a degree of correlation.
 
-# Real estate - Warren Villarosa <a name = "Real estate - Warren Villarosa"></a>
+# Real estate - Warren Villarosa <a name = "Real_estate"></a>
 
 ## Introduction:
 The following data was sourced from Kaggle as a CSV file and included real estate sales nation wide. The dataset did not include commercial real estate sales. Each row was a confirmed sale and included date, price, suburb, property type and the coordinates for the suburb
@@ -188,7 +188,7 @@ Figure 5 - Scatter Plot Showing Correlation between number of permits issued and
 Figure 6 - Scatter Plot Showing Correlation between number of permits issued and number of real estate sales.
 ![Number of Permits in Australia vs Total Real Estate Sales](https://paper-attachments.dropbox.com/s_12B7CFFAE8325C91D43F3E8963105294986F43FBE278F71DB68227B779BEA2DE_1603432314983_realestate_permits.png)
 
-# Permits & construction value - Sylvia Broadbent <a name = "Permits & construction value - Sylvia Broadbent"></a>
+# Permits & construction value - Sylvia Broadbent <a name = "Permits_construction"></a>
 
 Through my career as a building surveyor I know that councils are required to submit their statistical data monthly. I started with the Building Commission which is where they have to provide the data to.  Apparently, they just forward it to the ABS (Australian Bureau of Statistics). On the ABS website they have a collection of data of all states and surprisingly the data from WA starts at 1970! 
 After finding the right files I could export them as excel files. Then it was just a matter of changing them to a csv format and extracting the relevant information by creating a Pandas DataFrame in Jupyter. 
@@ -218,7 +218,7 @@ We expected the applications for construction grants to directly affect the numb
 
 ![](https://paper-attachments.dropbox.com/s_12B7CFFAE8325C91D43F3E8963105294986F43FBE278F71DB68227B779BEA2DE_1603432306265_fhog_permits.png)
 
-# First home owners grant - Lauren Prins <a name = "First home owners grant - Lauren Prins"></a>
+# First home owners grant - Lauren Prins <a name = "First_home"></a>
 
 On the 15th of every month, Revenue WA collects data on First Home Owner Grants and publishes it on www.wa.gov.au for public online use.  The data is broken down by month and backdates to July 2000. The downloadable excel file displays the total amount of applications made for the grant, and the number of grants that have been paid.  It’s further broken down into ‘Established Homes’ and ‘New Dwellings’. 
 To begin analysis on the data I was able to save the excel tabs as csv files and upload them to Jupyter. I used Pandas to merge the two csv’s together and changed the months listed into the quarters that we needed as an index. From there I could begin presenting the data through various graphs.
@@ -247,14 +247,14 @@ Did we find what we expected to find?
 - The total volume of sales, average house price and median house price decreased since the announcement of the pandemic. There was no shown correlation with this and the number of permits, as the r squared value is 0.08. 
 - Share value and volume dropped after March 2020. Although prices saw a recovery, the % change in traded volume kept negative.
 
-# Limitations of the study/ Difficulties experienced <a name = "Limitations of the study/ Difficulties experienced"></a>
+# Limitations of the study/ Difficulties experienced <a name = "Limitations"></a>
 - A lot of real estate information is paid which limited the amount and type of data that is accessible to us. 
 - Several construction grants were announced late May, starting in June. There was no information available yet so that is a factor that will have had an impact on the residential construction market.
 - Accessibility to the most recent data which would better provide information to the effects of Covid. 
 - It would be good to have more access to grant data sets, for WA and AU.
 - The Normal test was not possible as it needs a minimum of 8 samples and our dataset has 7 samples (7 quarters).  We also didn’t remove any outliers as there are not enough points left. The linear regression model is limited that it is not provided to predict values but to see if a correlation exist between our several investigations. The outcome will be more reliable with more data.
 
-# If we had more time <a name = "If we had more time"></a>
+# If we had more time <a name = "more_time"></a>
 - Extend our data time to include more previous years to compare to, and expand with Q3 and Q4 of 2020 so see if there is a recovery.
 - Compare WA’s performance against other states and possibly the world.
 - Add commercial as well as residential development.
