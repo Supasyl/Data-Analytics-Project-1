@@ -16,7 +16,7 @@
 - [Limitations of the study/ Difficulties experienced](#Limitations)
 - [If we had more time](#more_time)
 
-# Summary <a name = "Summery"></a>
+# Summary <a name = "Summary"></a>
 ## Hypothesis
 Considering the information we keep receiving from the government and media, it seems that the whole world has been affected by COVID-19. We are looking at various factors of the residential real estate and construction market in WA to see if it has really been affected.
 
